@@ -1,0 +1,26 @@
+CREATE TABLE `submissions` (
+  `id` int NOT NULL AUTO_INCREMENT,
+  `submitted` datetime DEFAULT NULL,
+  `requested` datetime DEFAULT NULL,
+  `fname` varchar(255) DEFAULT NULL,
+  `lname` varchar(255) DEFAULT NULL,
+  `email` varchar(255) DEFAULT NULL,
+  `advisor_email` varchar(255) DEFAULT NULL,
+  `urgent` tinyint(1) DEFAULT NULL,
+  `time` int DEFAULT NULL,
+  `title` varchar(255) DEFAULT NULL,
+  `type` varchar(255) DEFAULT NULL,
+  `needs` varchar(1023) DEFAULT NULL,
+  `media_url` varchar(255) DEFAULT NULL,
+  `notes` varchar(1023) DEFAULT NULL,
+  `approved` tinyint(1) DEFAULT NULL,
+  PRIMARY KEY (`id`)
+);
+
+CREATE TABLE `dates` (
+  `date` datetime DEFAULT NULL,
+  `available` int DEFAULT NULL,
+  `approved` int DEFAULT NULL,
+  `requests` int DEFAULT NULL,
+  `urgent` int DEFAULT NULL
+);

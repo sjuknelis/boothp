@@ -1,0 +1,26 @@
+#submission-col b {
+  display: inline;
+}
+#submissions {
+  overflow-y: auto;
+  height: calc(100vh - 9.5em);
+}
+.submission {
+  display: none;
+}
+#submissions .block {
+  display: block;
+}
+.top-padded {
+  padding-top: 0.6em;
+}
+.bold {
+  font-weight: bold;
+  text-decoration: underline;
+}
+.approve-text,.reject-text,.delete-text {
+  margin-left: 0.25em;
+}
+.move-text {
+  margin-right: 0.25em;
+}

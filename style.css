@@ -1,0 +1,186 @@
+html,body {
+  margin: 0;
+  height: 100%;
+  overflow: hidden;
+}
+body {
+  padding-top: 5.5em;
+  font-family: "Avenir Book";
+}
+input[type="text"]:not(.no-full),input[type="email"]:not(.no-full),textarea {
+  width: 100%;
+}
+input[type="number"] {
+  width: 5em;
+}
+input[type="text"],input[type="email"],input[type="number"],textarea {
+  border: 1px solid gray;
+  border-radius: 3px;
+}
+input[type="email"]:disabled {
+  background-color: #ddd;
+}
+input[type="radio"] {
+  margin-left: 1em;
+}
+textarea {
+  margin-bottom: 0;
+}
+b {
+  display: block;
+  margin-bottom: 1em;
+}
+#date-col .row {
+  margin-bottom: 0.8em;
+}
+#dates,#form-box {
+  overflow-y: auto;
+  overflow-x: hidden;
+  height: calc(100vh - 10em);
+}
+.time {
+  text-align: right;
+}
+.no-full {
+  width: 70%;
+}
+.navbar {
+  background-color: #8cf;
+  padding-top: 0;
+  padding-bottom: 0;
+  padding-left: 0.5em;
+}
+.navbar img {
+  padding-right: 0.2em;
+}
+.navbar a {
+  color: black;
+}
+.red {
+  color: red;
+}
+#form-col,#thanks-text,#out-of-sync-text {
+  display: none;
+}
+#error-msg {
+  display: none;
+  padding-left: 0.2em;
+}
+#calendar {
+  margin: auto 0;
+}
+#calendar,#calendar tr {
+  width: 100%;
+}
+#calendar td {
+  width: 14.3%;
+  text-align: center;
+}
+.date {
+  border: 2px solid #8cf;
+  margin: 0.1em;
+  padding: 0.2em;
+  border-radius: 3px;
+}
+.date:not(#month) {
+  height: 5em;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.date.active {
+  cursor: pointer;
+}
+#month {
+  text-align: center;
+  margin: 0.2em !important;
+  padding: 0;
+  height: 4em;
+}
+#month-text {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+#month .col-2 {
+  font-size: 1.5em;
+  line-height: 1em;
+  cursor: pointer;
+  -webkit-touch-callout: none;
+    -webkit-user-select: none;
+     -khtml-user-select: none;
+       -moz-user-select: none;
+        -ms-user-select: none;
+            user-select: none;
+}
+#month .col-2 {
+  padding: 0.75em 0;
+}
+#month .col-2:first-child {
+  border-right: 2px solid #8cf;
+}
+#month .col-2:last-child {
+  border-left: 2px solid #8cf;
+}
+#month .col-2,.date.active {
+  transition: background 0.075s ease-in-out;
+}
+#month .col-2:hover,.date.active:hover:not(.selected) {
+  background-color: #e0f0ff;
+}
+#month .col-2:active,.date.active:active,.date.selected {
+  background-color: #d0e8ff;
+}
+.date.disabled {
+  border: 2px solid #ccc;
+  color: #ccc;
+}
+
+#mobile-thanks,#back-text,#mobile-out-of-sync {
+  display: none;
+}
+@media (max-width: 576px) {
+  #date-col,#form-col {
+    width: 100vw;
+  }
+  #form-col {
+    background-color: white;
+    position: absolute;
+    top: 100vh;
+    left: 0;
+    padding-top: 1em;
+    transition: top 0.5s ease 0s;
+    display: block;
+  }
+  #form-col button[type="submit"] {
+    margin-bottom: 5em;
+  }
+  #form-col.visible {
+    top: calc(50px + 1.5em);
+  }
+  #mobile-thanks,#mobile-out-of-sync {
+    display: inline;
+  }
+  #desktop-thanks {
+    display: none;
+  }
+  html,body {
+    background-color: #8cf;
+    position: relative;
+  }
+  #date-col {
+    background-color: white;
+    position: absolute;
+    padding-top: 1em;
+    top: calc(50px + 1.5em);
+    left: 0;
+    height: 100vh;
+  }
+  #date-text {
+    display: inline;
+    padding-right: 0.2em;
+  }
+  #back-text {
+    display: inline;
+  }
+}
