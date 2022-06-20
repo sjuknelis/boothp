@@ -1,4 +1,4 @@
-# boothp
+# booth
 Nobles school assembly submission system
 
 <div align="center">
