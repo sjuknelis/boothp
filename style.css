@@ -43,6 +43,7 @@ b {
 }
 .no-full {
   width: 70%;
+  display: none;
 }
 .navbar {
   background-color: #8cf;
