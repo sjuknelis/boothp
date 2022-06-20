@@ -1,10 +1,7 @@
 # boothp
 Nobles school assembly submission system
 
-![Main view](screenshots/main.png)
-
-![Admin view](screenshots/admin.png)
-
-![Student view](screenshots/student.png)
-
-![Mobile main view](screenshots/mobile.png)
+<img src="screenshots/main.png" width="500" />
+<img src="screenshots/admin.png" width="500" />
+<img src="screenshots/student.png" width="500" />
+<img src="screenshots/mobile.png" width="500" />
